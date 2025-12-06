@@ -1,0 +1,8 @@
+Sleep(3000)
+Send("D:\TestIntellect\WorkSpace\DEC_2024_Offline\SeleniumConcepts\Screenshot\fullpage.png")
+Sleep(2000)
+Send("{TAB}")
+Sleep(2000)
+Send("{TAB}")
+Sleep(2000)
+Send("{ENTER}")

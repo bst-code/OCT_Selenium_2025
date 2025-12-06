@@ -1,0 +1,88 @@
+Xpath 
+
+1. Absolute Xpath
+2. Relative Xpath ----
+
+//tagname[@attribute='value']
+
+//input[@placeholder='Enter first name']
+
+//input[@placeholder='Enter first name']
+driver.findElement(By.xpath("//input[@placeholder='Enter first name']"));
+
+
+//input[@name='gender']
+(//input[@name='gender'])[3]
+
+//input[@value='-1']
+//input[@name='gender' and @value='-1']
+//input[@name='gender' or @value='-1']
+
+//select[@id='month']/option
+
+
+-----------------
+Xpath using text() method 
+
+//tagname[text()='value']
+
+Using following-sibling concept 
+//label[text()='Select your pronoun']/following-sibling::select
+
+
+// COntains
+//div[contains(@class,"Home_home__")]
+//div[starts-with(@class,"Home_home__")]
+
+
+----------------------------
+Dec 03 
+
+https://playground.bsparksoftwaretechnologies.com/send_keys
+
+/html/body/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/input
+
+//input[@id='email']
+(//div[starts-with(@class,'SendKeys_inputGroup__')])[1]
+(//div[contains(@class,'SendKeys_inputGroup__')])[1]/label
+    (or)
+(//div[contains(@class,'SendKeys_inputGroup__')])[1]/child::label
+//a[normalize-space(text()='Sign in')]
+
+//label[contains(text(),'EMAIL')]
+
+//label[contains(text(),'EMAIL')]/following-sibling::input[1]
+//input[@id='append']/preceding-sibling::label[1]
+
+//input[@id='email']/following::input
+//input[@id='email']/following::input[2]
+
+//input[@id='append']/preceding::input
+//input[@id='append']/preceding::input[1]
+
+//input[@id='append']/parent::div
+
+//input[@id="email"]/ancestor::div
+//select[@id="bst_select1"]/descendant::option
+
+----------------------------------------------------------
+CSS:
+
+tagName[attributename=attributeValue]
+
+ID --> #
+Class --> .
+
+input[id='email']
+#email
+.SendKeys_inputGroup__HZ1Fv
+
+
+
+
+
+
+
+
+
+
